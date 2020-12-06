@@ -1,0 +1,59 @@
+/* 
+Rishabh Mehta
+Project 1 - 09/01/20
+Part 1: Login Form (CSS)
+*/
+
+body  {  
+    background-color:#DC143C;  
+    font-family: 'Arial'; 
+
+
+}  
+
+.form{  
+        width: 382px;  
+        overflow: hidden;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background: #2F4F4F;  
+        border-radius: 15px ;  
+          
+}  
+h1{  
+    text-align: center;  
+    color: #F8F8FF;  
+    padding: 20px;  
+}  
+label{  
+    color: #F8F8FF;  
+    font-size: 17px;  
+}  
+#email{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#password{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#btn{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color:#000000 
+  
+  
+}  
+
+
