@@ -42,8 +42,10 @@ include("db.php");
       $arSkills = explode (", ", $questionSkills);
       print_r($arSkills);
 
-      $stmt = $conn->prepare("insert into questions (name, body, skills) values ( :name, :body, :skills)");
-      $stmt->bindParam(":name", $questionName, PDO::PARAM_STR); //Preventing SQL injection attacks
+      $user_id = $_SESSION['user_id'];
+      $stmt = $conn->prepare("insert into questions (user_id, name, body, skills) values ( :user_id, :name, :body, :skills)");
+      $stmt->bindParam(":user_id", $user_id, PDO::PARAM_INT); //Preventing SQL injection attacks
+      $stmt->bindParam(":name", $questionName, PDO::PARAM_STR);
       $stmt->bindParam(":body", $questionBody, PDO::PARAM_STR);
       $stmt->bindParam(":skills", $questionSkills, PDO::PARAM_STR);
         $stmt->execute();

@@ -22,7 +22,7 @@ include('userinfo.php');
 <br/> <br/>
 <?php
 
-$sql = "SELECT id, name, body, skills FROM questions";
+$sql = "SELECT id, name, body, skills FROM questions WHERE user_id = $user_id";
 
 // Execute the query
 $stmt = $conn->query($sql);
