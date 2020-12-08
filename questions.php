@@ -23,7 +23,6 @@ include('userinfo.php');
 <?php
 
 $sql = "SELECT id, name, body, skills FROM questions WHERE user_id = $user_id";
-
 // Execute the query
 $stmt = $conn->query($sql);
 $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
